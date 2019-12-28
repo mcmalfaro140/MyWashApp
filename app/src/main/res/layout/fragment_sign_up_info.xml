@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textbox">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mainText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Personal Information"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iconImg"
+                    android:src="@drawable/man"
+                    android:layout_width="98dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:text="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/nametextView"
+                    android:text="Name:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/nameeditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/phonetextView"
+                    android:text="Phone Number:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/phoneeditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/addresstextView"
+                    android:text="Address:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/addresseditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/citytextView"
+                    android:text="City:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/cityeditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/statetextView"
+                    android:text="State:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/stateditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/ziptextView"
+                    android:text="Zip Code:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/zipditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"
+                    android:inputType="textCapSentences"
+                    android:ems="10" />
+
+                <FrameLayout
+                    android:id="@+id/basicFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/basicback">
+
+                        <TextView
+                            android:id="@+id/basicTitle"
+                            android:text="Basic Wash"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/basicDesc"
+                            android:text="Description:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/basicDescEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/basicPriceText"
+                            android:text="Price:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/basicPriceEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:ems="10"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/basicErrorTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/deluxFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/deluxback">
+
+                        <TextView
+                            android:id="@+id/deluxTitle"
+                            android:text="Delux Wash"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/deluxDesc"
+                            android:text="Description:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/deluxDescEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:ems="10"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/deluxPriceText"
+                            android:text="Price:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/deluxPriceEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:ems="10"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/deluxErrorTxt"
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/extraFrame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+
+                    tools:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/extraback">
+
+                        <TextView
+                            android:id="@+id/extraTitle"
+                            android:text="Extra Care Wash"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/extraDesc"
+                            android:text="Description:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/extraDescEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:ems="10"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/extraPriceText"
+                            android:text="Price:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/extraPriceEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textPersonName"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:ems="10"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/extraErrorTxt"
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/addDelux"
+                    android:layout_width="218dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/deluxback"
+                    android:text="Add delux Carwash"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:id="@+id/addExtra"
+                    android:layout_width="210dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/extraback"
+                    android:text="Add Extra Care Carwash"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/errorTxt"
+                    android:text="Registration failed. Try again!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="center"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:visibility="gone" />
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/btn"
+                    android:text="Finish Registration"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

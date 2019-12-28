@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+
+    android:background="@drawable/listbackground"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="171dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                tools:srcCompat="@tools:sample/avatars[2]" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginRight="20dp">
+
+
+                <TextView
+
+                    android:id="@+id/provider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Misael Corvera"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4"
+                    android:theme="@style/RatingBar"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/price_text"
+                    android:text="Starting Price: $10.99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textAlignment="textEnd" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+    <Button
+        android:id="@+id/bookwash_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Book Wash"
+        android:textColor="@color/white"
+        android:background="@drawable/btn"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>

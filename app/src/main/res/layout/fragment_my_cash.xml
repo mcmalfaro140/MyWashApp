@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textbox">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="109dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Weekly Earnings"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Oct 15 - Nov 15"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Money"
+                    android:layout_width="match_parent"
+                    android:layout_height="162dp"
+                    android:layout_marginTop="5dp"
+                    android:text="620.00"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/moneygreen"
+                    android:textSize="100sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/washEarnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Wash Earnings"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#7E030A00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/net"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Wash +$520.73"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#030A00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Tips +$99.27"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#030A00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total $620.00"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#030A00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totaldeposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Deposited $500.00"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="#030A00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+    </layout>

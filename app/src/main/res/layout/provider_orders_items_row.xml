@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/proordersback"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHeaderPro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Order "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/washTypeProvtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic Wash"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client: "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clienttextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Misael Corvera"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneProvtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="(818) 239 - 6835"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/locationProvtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="333 W Windsor Rd Glendale Ca. 91204"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appointment Date:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateProvtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Jun. 26, 2019"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/orderStatusProvtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending..."
+                android:textAlignment="center"
+                android:textColor="@color/moneygreen"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnusersbooking"
+            android:gravity="center"
+            android:text="Accept Order"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btndecline"
+            android:gravity="center"
+            android:text="Decline Order"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btnusersbooking"
+        android:gravity="center"
+        android:text="Order Completed"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+<!--<RelativeLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+
+<!--<TextView-->
+<!--    android:id="@+id/provider_name_item"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="8dp"-->
+<!--    android:layout_marginRight="8dp"-->
+<!--    android:layout_marginTop="2dp"-->
+<!--    android:ellipsize="end"-->
+<!--    android:textSize="16sp"-->
+<!--    tools:text="Provider" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/wash_type_item"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="8dp"-->
+<!--    android:layout_marginRight="8dp"-->
+<!--    android:layout_marginTop="2dp"-->
+<!--    android:layout_below="@+id/provider_name_item"-->
+<!--    android:textColor="#090808"-->
+<!--    android:textSize="16sp"-->
+<!--    tools:text="@string/wash_type" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/order_status_item"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@+id/wash_type_item"-->
+<!--    android:layout_marginLeft="8dp"-->
+<!--    android:layout_marginTop="2dp"-->
+<!--    android:layout_marginRight="8dp"-->
+<!--    android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--    android:textColor="#090808"-->
+<!--    android:textSize="16sp"-->
+<!--    android:visibility="visible"-->
+<!--    tools:text="Order Status" />-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/imageView2"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@+id/order_status_item"-->
+<!--    android:contentDescription="@string/providerimage"-->
+<!--    app:srcCompat="@mipmap/ic_launcher_round" />-->
+
+<!--</RelativeLayout>-->
